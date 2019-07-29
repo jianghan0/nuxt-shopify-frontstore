@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 export default {
   mode: 'universal',
@@ -28,7 +29,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@nuxtjs/dotenv'
+    '@/plugins/shopify-client'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -39,6 +40,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Build configuration
