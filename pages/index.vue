@@ -6,7 +6,7 @@
         yenme
       </h1>
       <h2 class="subtitle">
-        
+
       </h2>
       <div class="links">
         <a
@@ -34,6 +34,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  created () {
+    this.$shopify.product.fetchAll().then((products) => {
+      console.log(products);
+    });
   }
 }
 </script>
