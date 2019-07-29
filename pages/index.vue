@@ -35,8 +35,8 @@ export default {
   components: {
     Logo
   },
-  created () {
-    this.$shopify.product.fetchAll().then((products) => {
+  asyncData ({ app }) {
+    app.$shopify.product.fetchAll().then((products) => {
       console.log(products);
     });
   }
