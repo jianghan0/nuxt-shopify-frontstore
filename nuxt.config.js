@@ -28,6 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Nuxt.js dev-modules
